@@ -122,10 +122,10 @@ abstract class OpenVKPresenter extends SimplePresenter
         if(!($res === IP::RL_RESET || $res === IP::RL_CANEXEC)) {
             if($res === IP::RL_BANNED && OPENVK_ROOT_CONF["openvk"]["preferences"]["security"]["rateLimits"]["autoban"]) {
                 $this->user->identity->ban("Account has possibly been stolen");
-                exit("Хакеры? Интересно...");
+                exit("Обнаружена попытка взлома...");
             }
             
-            $this->flashFail("err", "Чумба, ты совсем ёбнутый?", "Сходи к мозгоправу, попей колёсики. В OpenVK нельзя вбрасывать щитпосты так часто. Код исключения: $res.");
+            $this->flashFail("err", "Подозрительная активность.", "В OpenVK нельзя писать слишком часто. Код исключения: $res.");
         }
     }
     
