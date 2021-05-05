@@ -19,9 +19,9 @@
         <div n:attr="id => ($isPrivacy ? 'activetabs' : 'ki')" class="tab">
             <a n:attr="id => ($isPrivacy ? 'act_tab_a' : 'ki')" href="/settings?act=privacy">{_"privacy"}</a>
         </div>
-        <div n:attr="id => ($isFinance ? 'activetabs' : 'ki')" class="tab">
+        <!--<div n:attr="id => ($isFinance ? 'activetabs' : 'ki')" class="tab">
             <a n:attr="id => ($isFinance ? 'act_tab_a' : 'ki')" href="/settings?act=finance">{_points}</a>
-        </div>
+        </div>-->
         <div n:attr="id => ($isInterface ? 'activetabs' : 'ki')" class="tab">
             <a n:attr="id => ($isInterface ? 'act_tab_a' : 'ki')" href="/settings?act=interface">{_"interface"}</a>
         </div>
@@ -314,7 +314,7 @@
                             </select>
                         </td>
                     </tr>
-                    <tr>
+                    <!--<tr>
                         <td width="120" valign="top">
                             <span class="nobold">NSFW-контент</span>
                         </td>
@@ -325,7 +325,7 @@
                                 <option value="2" {if $user->getNsfwTolerance() === 2}selected{/if}>Показывать</option>
                             </select>
                         </td>
-                    </tr>
+                    </tr>-->
                     <tr>
                         <td width="120" valign="top">
                             <span class="nobold">Вид постов</span>
