@@ -30,6 +30,8 @@ h3. Installation procedure
 
 
 ln -s /path/to/chandler/extensions/available/commitcaptcha /path/to/chandler/extensions/enabled/
+
+
 ln -s /path/to/chandler/extensions/available/openvk /path/to/chandler/extensions/enabled/
 
 
