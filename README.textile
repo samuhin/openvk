@@ -1,3 +1,12 @@
+sudo docker run -it -p YOUR_PORT:80 --privileged openvk/openvk
+
+
+podman run -it -p YOUR_PORT:80 openvk/openvk
+
+---
+
+
+
 h1. OpenVK [inactive]
 
 *Statement*: Our members have lost enthusiasm and interest in developing OpenVK, so a decision has been made to freeze our project. Main website and source code will still be available. If you are ready to handle both chandler and OVK, we can accept you as a project maintainer (contact "@saddyteirusu":https://t.me/saddyteirusu or "@dsrev":https://t.me/dsrev directly on Telegram).
