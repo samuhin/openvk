@@ -6,10 +6,10 @@
 {/block}
 
 {block heading}
-    Пиздюки
+    Пользователи
 {/block}
 
-{block searchTitle}Поиск пиздюков{/block}
+{block searchTitle}Поиск пользователей{/block}
 
 {block content}
     {var users  = iterator_to_array($users)}
