@@ -525,7 +525,7 @@ START TRANSACTION;
 
 INSERT INTO `ChandlerGroups` VALUES (NULL, "OVK\\Subteno", NULL);
 
-INSERT INTO `ChandlerACLGroupsPermissions` VALUES ('9419ceaf-ae69-11eb-81bb-525400d3238e', 'openvk\\Web\\Models\\Entities\\TicketReply', 0, 'write', 1);
+INSERT INTO `ChandlerACLGroupsPermissions` VALUES ((SELECT id FROM ChandlerGroups WHERE name = "OVK\\Subteno"), 'openvk\\Web\\Models\\Entities\\TicketReply', 0, 'write', 1);
 
 INSERT INTO `ChandlerACLRelations` VALUES ("ffffffff-ffff-ffff-ffff-ffffffffffff", (SELECT id FROM ChandlerGroups WHERE name = "OVK\\Subteno"), 64);
 
