@@ -524,6 +524,9 @@ COMMIT;
 START TRANSACTION;
 
 INSERT INTO `ChandlerGroups` VALUES (NULL, "OVK\\Subteno", NULL);
+
+INSERT INTO `ChandlerACLGroupsPermissions` VALUES ('9419ceaf-ae69-11eb-81bb-525400d3238e', 'openvk\\Web\\Models\\Entities\\TicketReply', 0, 'write', 1);
+
 INSERT INTO `ChandlerACLRelations` VALUES ("ffffffff-ffff-ffff-ffff-ffffffffffff", (SELECT id FROM ChandlerGroups WHERE name = "OVK\\Subteno"), 64);
 
 INSERT INTO `profiles` (`id`, `user`, `first_name`, `last_name`, `pseudo`, `info`, `about`, `status`, `privacy`, `left_menu`, `sex`, `type`, `phone`, `email`, `coins`, `since`, `block_reason`, `verified`, `reputation`, `shortcode`, `registering_ip`, `online`, `birthday`, `hometown`, `polit_views`, `marital_status`, `email_contact`, `telegram`, `interests`, `fav_music`, `fav_films`, `fav_shows`, `fav_books`, `fav_quote`, `city`, `address`, `style`, `style_avatar`, `show_rating`, `milkshake`, `nsfw_tolerance`, `notification_offset`, `deleted`, `microblog`) VALUES ('1', 'ffffffff-ffff-ffff-ffff-ffffffffffff', 'System', 'Administrator', NULL, NULL, NULL, 'Default System Administrator account', '1099511627775', '1099511627775', '0', '0', NULL, 'admin@localhost.localdomain6', '100', '2018-10-31 15:15:15', NULL, '1', '1000', 'sysop', '::1', '0', '0', NULL, '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Arcadia Bay', NULL, 'ovk', '0', '1', '0', '0', '0', '0', '0');
