@@ -6,10 +6,10 @@
 {/block}
 
 {block heading}
-    Бутылки
+    Группы
 {/block}
 
-{block searchTitle}Поиск бутылок{/block}
+{block searchTitle}Поиск групп{/block}
 
 {block content}
     {var clubs  = iterator_to_array($clubs)}
