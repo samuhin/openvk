@@ -288,7 +288,7 @@
                             </select>
                         </td>
                     </tr>
-                    <tr>
+                    <!--<tr>
                         <td width="120" valign="top">
                             <span class="nobold">{_"style"}</span>
                         </td>
@@ -302,7 +302,7 @@
                                 </option>
                             </select>
                         </td>
-                    </tr>
+                    </tr>-->
                     <tr>
                         <td width="120" valign="top">
                             <span class="nobold">{_ui_settings_rating}</span>
