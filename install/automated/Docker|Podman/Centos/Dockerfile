@@ -49,7 +49,7 @@ git clone https://github.com/samukhin/commitcaptcha.git && \
 cd commitcaptcha/ && \
 composer2 install && \
 cd .. && \
-git clone -b samukhin https://github.com/samukhin/openvk.git && \
+git clone -b mini https://github.com/samukhin/openvk.git && \
 cd openvk/ && \
 composer2 install && \
 cd Web/static/js && \
