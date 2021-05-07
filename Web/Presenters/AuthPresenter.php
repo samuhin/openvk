@@ -55,7 +55,7 @@ final class AuthPresenter extends OpenVKPresenter
         if(!is_null($this->user))
             $this->redirect("/id" . $this->user->id, static::REDIRECT_TEMPORARY);
         
-        if(!$this->hasPermission("user", "register", -1)) exit("Вас забанили");
+        if(!$this->hasPermission("user", "register", -1)) exit("Вас заблокировали");
         
         if($_SERVER["REQUEST_METHOD"] === "POST") {
             $this->assertCaptchaCheckPassed();
@@ -98,10 +98,10 @@ final class AuthPresenter extends OpenVKPresenter
             
             $user = $this->db->table("ChandlerUsers")->where("login", $this->postParam("login"))->fetch();
             if(!$user)
-                $this->flashFail("err", "Не удалось войти", "Неверное имя пользователя или пароль. <a href='/restore.pl'>Забыли пароль?</a>");
+                $this->flashFail("err", "Не удалось войти", "Неверное имя пользователя или пароль.");
             
             if(!$this->authenticator->login($user->id, $this->postParam("password")))
-                $this->flashFail("err", "Не удалось войти", "Неверное имя пользователя или пароль. <a href='/restore.pl'>Забыли пароль?</a>");
+                $this->flashFail("err", "Не удалось войти", "Неверное имя пользователя или пароль.");
             
             $this->redirect($redirUrl ?? "/id" . $user->related("profiles.user")->fetch()->id, static::REDIRECT_TEMPORARY);
             exit;
